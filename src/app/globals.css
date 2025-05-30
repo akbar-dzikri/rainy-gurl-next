@@ -4,6 +4,16 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* Custom color variables */
+  --color-pink-cerah: var(--pink-cerah);
+  --color-pink-gelap: var(--pink-gelap);
+  --color-bg-pink: var(--bg-pink);
+  --color-bg-dark: var(--bg-dark);
+  --color-ungu: var(--ungu);
+  --color-putih: var(--putih);
+  --color-putih-lembut: var(--putih-lembut);
+  --color-text-dark: var(--text-dark);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-poppins: var(--font-poppins);
@@ -54,16 +64,6 @@
   --putih: #ffffff;
   --putih-lembut: #fafafa;
   --text-dark: #333333;
-
-  /* For tailwindcss */
-  --color-pink-cerah: var(--pink-cerah);
-  --color-pink-gelap: var(--pink-gelap);
-  --color-bg-pink: var(--bg-pink);
-  --color-bg-dark: var(--bg-dark);
-  --color-ungu: var(--ungu);
-  --color-putih: var(--putih);
-  --color-putih-lembut: var(--putih-lembut);
-  --color-text-dark: var(--text-dark);
 
   --radius: 0.625rem;
   --background: var(--bg-pink);
