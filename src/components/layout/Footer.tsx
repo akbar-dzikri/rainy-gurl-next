@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-white text-bg-dark py-4 border-t-2 border-text-dark mt-auto">
+    <footer className="bg-white text-bg-dark py-4 border-t-2 border-pink-cerah mt-auto">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-4">
           <BrandLogo size="sm" />

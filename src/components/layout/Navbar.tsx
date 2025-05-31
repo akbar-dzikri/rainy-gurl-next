@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
   );
 
   return (
-    <nav className="sticky top-0 w-full bg-white border-b-2 border-text-dark z-50 transition-colors duration-300">
+    <nav className="sticky top-0 w-full bg-white border-b-2 border-pink-cerah z-50 transition-colors duration-300">
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <BrandLogo />
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
