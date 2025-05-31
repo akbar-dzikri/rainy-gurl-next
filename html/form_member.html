@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Membership</title>
+    <!-- Fonts Style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="icon"
+      href="./favicon_rainygurl_transparent_32.png"
+      type="image/png"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_form_member.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="brand">
+          <img
+            src="./img/logo rainygurl.jpg"
+            alt="Rainy Gurl Logo"
+            class="brand-logo"
+          />
+          Rainy Gurl
+        </div>
+
+        <div class="nav-links" id="navMenu">
+          <a href="./index.html">Home</a>
+          <a href="./penjualan.html">Penjualan</a>
+          <button class="cta-button mobile-only" id="membershipBtn">
+            Join Member
+          </button>
+        </div>
+
+        <div class="nav-actions">
+          <!-- Desktop -->
+          <button
+            class="cart-button desktop-only"
+            aria-label="Shopping Cart"
+            id="desktopNavAction"
+          >
+            <a href="./penjualan.html"><i data-feather="shopping-cart"></i></a>
+          </button>
+
+          <button class="icon-button desktop-only" id="membershipBtn">
+            <a href="./form_member.html"><i data-feather="user"></i></a>
+          </button>
+
+          <!-- Mobile -->
+          <button
+            class="cart-button mobile-only"
+            aria-label="Shopping Cart"
+            id="mobileNavAction"
+          >
+            <a href="./penjualan.html"><i data-feather="shopping-cart"></i></a>
+          </button>
+
+          <button class="hamburger" id="hamburgerBtn">
+            <a href="#"><i data-feather="menu"></i></a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Form Pendaftaran -->
+    <section class="membership-form-section" id="form-membership">
+      <div class="form-container">
+        <h2 class="form-title">Formulir Pendaftaran Member</h2>
+        <p class="form-description">
+          Isi data Anda dengan benar untuk bergabung sebagai member Rainy Gurl.
+        </p>
+
+        <form class="membership-form">
+          <div class="form-columns">
+            <!-- Kolom Kiri -->
+            <div class="form-left">
+              <div class="form-group">
+                <label for="fullname">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Masukkan nama lengkap Anda"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Aktif</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Contoh: kamu@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="whatsapp">Nomor WhatsApp</label>
+                <input
+                  type="tel"
+                  id="whatsapp"
+                  name="whatsapp"
+                  placeholder="08xxxxxxxxxx"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="city">Kota</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Contoh: Jakarta"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Garis Pembatas -->
+            <div class="form-divider"></div>
+
+            <!-- Kolom Kanan -->
+            <div class="form-right">
+              <div class="form-group">
+                <label for="address">Alamat Lengkap</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  placeholder="Masukkan alamat lengkap Anda"
+                  required
+                ></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Buat username Anda"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Buat password"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="confirm-password">Ulangi Password</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Masukkan ulang password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Tombol tetap di tengah -->
+          <div class="form-button-wrapper">
+            <button type="submit" class="submit-button">Gabung Sekarang</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="faq-float">
+      <button type="button" class="faq-button" onclick="toggleFAQPopup()">
+        <i data-feather="help-circle"></i>
+      </button>
+    </div>
+    <!-- Form Pendaftaran End -->
+
+    <!-- FAQ -->
+    <div class="faq-popup" id="faqPopup">
+      <div class="faq-content">
+        <button class="close-faq" onclick="toggleFAQPopup()">&times;</button>
+        <h3>FAQ - Membership</h3>
+        <ul>
+          <li>
+            <strong>Apakah membership gratis?</strong><br />Ya, ada pilihan
+            gratis dan berbayar.
+          </li>
+          <li>
+            <strong>Apa saja benefit member?</strong><br />Diskon, akses produk
+            eksklusif, konten premium.
+          </li>
+          <li>
+            <strong>Bagaimana cara mengubah data saya?</strong><br />Hubungi
+            admin Rainy Gurl via WhatsApp.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- FAQ End -->
+
+    <!-- FAQ End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="./img/logo rainygurl.jpg" alt="Smart Math Logo" />
+          <h3>Rainy Gurl</h3>
+        </div>
+
+        <div class="footer-links-wrapper">
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#katalog">Katalog</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Sosmed</a></li>
+            <li><a href="#membership">Membership</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="message-circle"></i></a>
+            <a href="./index.html"><i data-feather="home"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Rainy Gurl. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="form_member.js"></script>
+  </body>
+</html>

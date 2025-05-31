@@ -1,0 +1,212 @@
+/* ROOT VARIABEL WARNA UTAMA */
+:root {
+  --pink-cerah: #ff69b4;
+  --pink-gelap: #c71585;
+  --bg-pink: #eabfbc;
+  --bg-dark: #c0a09d;
+  --bg-light: #ffd6e0;
+  --ungu: #9b59d0;
+  --putih: #ffffff;
+  --putih-lembut: #fafafa;
+  --text-dark: #333333;
+}
+
+/* Form Membership */
+.membership-form-section {
+  padding: 60px 20px 30px;
+  min-height: calc(100vh - 80px);
+  color: var(--pink-gelap);
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 960px;
+  margin-top: 0 auto;
+  background-color: var(--putih);
+  padding: 25px 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--pink-gelap);
+}
+
+.form-description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.form-columns {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-left,
+.form-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.form-divider {
+  width: 1px;
+  background-color: #e3b4cb;
+  margin: 0 10px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #e3b4cb;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #a83f72;
+  outline: none;
+}
+
+.form-button-wrapper {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #a83f72;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #d66097;
+}
+
+/* FAQ */
+.faq-float {
+  position: sticky;
+  bottom: 80px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  z-index: 999;
+}
+
+.faq-float .faq-button {
+  background-color: var(--pink-gelap);
+  color: var(--putih);
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s;
+}
+
+.faq-float .faq-button:hover {
+  background-color: var(--pink-cerah);
+}
+
+.faq-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  border: 0.2rem solid var(--pink-cerah);
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.faq-popup.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.close-faq {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #d66097;
+  cursor: pointer;
+}
+
+.faq-content ul {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.faq-content li {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 1200px) {
+  .membership-form-section {
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-columns {
+    flex-direction: column;
+  }
+
+  .form-divider {
+    display: none;
+  }
+}

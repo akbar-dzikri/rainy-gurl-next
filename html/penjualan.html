@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Rainy Gurl</title>
+    <!-- Fonts Style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="icon"
+      href="./favicon_rainygurl_transparent_32.png"
+      type="image/png"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style_penjualan.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="brand">
+          <img
+            src="./img/logo rainygurl.jpg"
+            alt="Rainy Gurl Logo"
+            class="brand-logo"
+          />
+          Rainy Gurl
+        </div>
+
+        <div class="nav-links" id="navMenu">
+          <a href="./index.html">Home</a>
+          <a href="#promosi">Promosi</a>
+          <a href="#product">Product</a>
+          <button class="cta-button mobile-only" id="membershipBtn">
+            Join Member
+          </button>
+        </div>
+
+        <div class="nav-actions">
+          <!-- Desktop -->
+          <button
+            class="cart-button desktop-only"
+            aria-label="Shopping Cart"
+            id="desktopNavAction"
+          >
+            <a href="./penjualan.html"><i data-feather="shopping-cart"></i></a>
+          </button>
+
+          <button class="icon-button desktop-only" id="membershipBtn">
+            <a href="./form_member.html"><i data-feather="user"></i></a>
+          </button>
+
+          <!-- Mobile -->
+          <button
+            class="cart-button mobile-only"
+            aria-label="Shopping Cart"
+            id="mobileNavAction"
+          >
+            <a href="./penjualan.html"><i data-feather="shopping-cart"></i></a>
+          </button>
+
+          <button class="hamburger" id="hamburgerBtn">
+            <a href="#"><i data-feather="menu"></i></a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Breadcrumb + Search + Filter Section Wrapper -->
+    <div class="section-wrapper">
+      <div class="top-guidance">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb-container" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active">Penjualan</li>
+          </ol>
+        </nav>
+        <!-- Breadcrumb End -->
+
+        <!-- Search + Fitler -->
+        <div class="search-filter-container">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Cari Produk Handmadee...."
+              aria-label="Search Products"
+            />
+            <button class="search-btn"><i data-feather="search"></i></button>
+          </div>
+          <div class="filter-box">
+            <label for="kategori">Kategori : </label>
+            <select id="kategori">
+              <option value="all">Semua</option>
+              <option value="Octopus Chain">Octopus Chain</option>
+              <option value="Bag Chain">Couple Chain Keychain</option>
+              <option value="Lip Holder Bagcharm">Lip Holder Bagcharm</option>
+              <option value="Amplop">Amplop</option>
+              <option value="Mirror Cover Bagcharm">Amplop</option>
+              <option value="Custom Crocher">Custom Crocher</option>
+            </select>
+          </div>
+        </div>
+        <!-- Search + Filter End -->
+      </div>
+
+      <!-- Promo / Diskon Product -->
+      <section class="promo-section" id="promo">
+        <div class="promo-banner">
+          <h2>✨ Promo Bulan Ini ✨</h2>
+          <p>
+            Dapatkan diskon hingga <strong>25%</strong> untuk koleksi Valentine
+            & Graduation!
+          </p>
+        </div>
+
+        <div class="promo-products">
+          <!-- Produk 1 -->
+          <div class="product-card">
+            <img
+              src="./img/product/octopus/couple octopus/banana.jpg"
+              alt="Produk 1"
+              class="product-image"
+            />
+            <h3 class="product-name">Banana</h3>
+            <p class="product-price">Rp 11.000</p>
+          </div>
+          <!-- Produk 2 -->
+          <div class="product-card">
+            <img
+              src="./img/product/octopus/couple octopus/berry.jpg"
+              alt="Produk 2"
+              class="product-image"
+            />
+            <h3 class="product-name">Berry</h3>
+            <p class="product-price">Rp 10.000</p>
+          </div>
+          <!-- Produk 3 -->
+          <div class="product-card">
+            <img
+              src="./img/product/octopus/octopus satuan/baby blue.jpg"
+              alt="Produk 3"
+              class="product-image"
+            />
+            <h3 class="product-name">Baby Blue</h3>
+            <p class="product-price">Rp 5.000</p>
+          </div>
+          <!-- Produk 4 -->
+          <div class="product-card">
+            <img
+              src="./img/product/crochet bouquet/Crochet Rose Bouquet/WhatsApp Image 2025-05-23 at 21.58.07.jpeg"
+              alt="Produk 4"
+              class="product-image"
+            />
+            <h3 class="product-name">Rouse Bouquet</h3>
+            <p class="product-price">Rp 35.000</p>
+          </div>
+          <!-- Produk 5 -->
+          <div class="product-card">
+            <img
+              src="./img/product/bagcharm/Crochet Flower Lipstick Holder/blue.jpeg"
+              alt="Produk 5"
+              class="product-image"
+            />
+            <h3 class="product-name">Blue Lip Charm</h3>
+            <p class="product-price">Rp 12.000</p>
+          </div>
+        </div>
+      </section>
+      <!-- Promo / Diskon Product End -->
+    </div>
+    <!-- Breadcrumb + Search + Filter Section Wrapper -->
+
+    <!-- Kategori 1 -->
+    <section class="product-category"  id="product">
+      <h2 class="category-title">Octopus Chain</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Card produk 1 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-1"
+          data-name="Baby Blue"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/baby blue.jpg"
+            alt="Baby Blue"
+            class="product-image"
+          />
+          <div class="product-name">Baby Blue</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 2 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-2"
+          data-name="Baby Pink"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/baby pink.jpg"
+            class="product-image"
+            alt="Baby Pink"
+          />
+          <div class="product-name">Baby Pink</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 3 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-3"
+          data-name="Blue Berrkiss"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/blue berrykiss.jpg"
+            class="product-image"
+            alt="Blue Berrkiss"
+          />
+          <div class="product-name">Baby Berrykiss</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+        <!-- Card produk 4 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-4"
+          data-name="Blue Yupi"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/blue yupi.jpg"
+            class="product-image"
+            alt="Blue Yupi"
+          />
+          <div class="product-name">Baby Yupi</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 5 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-5"
+          data-name="Broken White"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/broken white.jpg"
+            class="product-image"
+            alt="Broken White"
+          />
+          <div class="product-name">Broken White</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 6 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-6"
+          data-name="Coklat"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/coklat.jpg"
+            class="product-image"
+            alt="Coklat"
+          />
+          <div class="product-name">Coklat</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 7 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-7"
+          data-name="Coksu"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/coksu.jpg"
+            class="product-image"
+            alt="Coksu"
+          />
+          <div class="product-name">Coksu</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 8 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-8"
+          data-name="Dusty Pink"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/dusty pink.jpg"
+            class="product-image"
+            alt="Dusty Pink"
+          />
+          <div class="product-name">Dusty Pink</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 9 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-9"
+          data-name="Green"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/green.jpg"
+            class="product-image"
+            alt="Green"
+          />
+          <div class="product-name">Green</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 10 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-10"
+          data-name="Grey"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/grey.jpg"
+            class="product-image"
+            alt="Grey"
+          />
+          <div class="product-name">Grey</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 11 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-11"
+          data-name="Lavender"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/lavender.jpg"
+            class="product-image"
+            alt="Lavender"
+          />
+          <div class="product-name">Lavender</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 12 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-12"
+          data-name="Mustard"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/mustard.jpg"
+            class="product-image"
+            alt="Blue Berrkiss"
+          />
+          <div class="product-name">Mustard</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 13 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-13"
+          data-name="Orange"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/orange.jpg"
+            class="product-image"
+            alt="Orange"
+          />
+          <div class="product-name">Orange</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 14 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-14"
+          data-name="Red"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/red.jpg"
+            class="product-image"
+            alt="Red"
+          />
+          <div class="product-name">Red</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 15 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-15"
+          data-name="Tosca Muda"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/tosca muda.jpg"
+            class="product-image"
+            alt="Red"
+          />
+          <div class="product-name">Tosca Muda</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 16 -->
+        <div
+          class="product-card selectable"
+          data-id="octopus-16"
+          data-name="Tosca Tua"
+          data-price="9000"
+        >
+          <img
+            src="./img/product/octopus/octopus satuan/tosca tua.jpeg"
+            class="product-image"
+            alt="Red"
+          />
+          <div class="product-name">Tosca Tua</div>
+          <div class="product-price">Rp 9000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori 1 End -->
+
+    <!-- Kategori 2  -->
+    <section class="product-category">
+      <h2 class="category-title">Couple Octopus</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Card produk 1 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-1"
+          data-name="Banana"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/banana.jpg"
+            class="product-image"
+            alt="Banana"
+          />
+          <div class="product-name">Banana</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 2 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-2"
+          data-name="Berry"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/berry.jpg"
+            class="product-image"
+            alt="Berry"
+          />
+          <div class="product-name">Berry</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 3 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-3"
+          data-name="Bubble"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/bubble.jpg"
+            class="product-image"
+            alt="Banana"
+          />
+          <div class="product-name">Bubble</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 4 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-4"
+          data-name="Choco Malt"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/choco malt.jpg"
+            class="product-image"
+            alt="Choco Malt"
+          />
+          <div class="product-name">Choco Malt</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 5 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-5"
+          data-name="choco"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/choco.jpg"
+            class="product-image"
+            alt="Choco"
+          />
+          <div class="product-name">Choco</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 6 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-6"
+          data-name="Greentea"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/greentea.jpg"
+            class="product-image"
+            alt="Banana"
+          />
+          <div class="product-name">Banana</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 7 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-7"
+          data-name="Mariposa"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/mariposa.jpg"
+            class="product-image"
+            alt="Mariposa"
+          />
+          <div class="product-name">Mariposa</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 8 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-8"
+          data-name="Matcha"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/matcha.jpg"
+            class="product-image"
+            alt="Matcha"
+          />
+          <div class="product-name">Matcha</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 9 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-9"
+          data-name="Mocacheese"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/mocacheese.jpg"
+            class="product-image"
+            alt="Banana"
+          />
+          <div class="product-name">Mocacheese</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 10 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-10"
+          data-name="Oreo"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/oreo.jpg"
+            class="product-image"
+            alt="Oreo"
+          />
+          <div class="product-name">Orea</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 11 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-11"
+          data-name="Red Velvet"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/red velvet.jpg"
+            class="product-image"
+            alt="Banana"
+          />
+          <div class="product-name">Red Velvet</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 12 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-12"
+          data-name="Strawberry"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/strawberry.jpg"
+            class="product-image"
+            alt="Banana"
+          />
+          <div class="product-name">Strawberry</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 13 -->
+        <div
+          class="product-card selectable"
+          data-id="couple-octopus-13"
+          data-name="Yupi"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/octopus/couple octopus/yupi.jpeg"
+            class="product-image"
+            alt="Yupi"
+          />
+          <div class="product-name">Yupi</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori 2 End -->
+
+    <!-- Kategori 3 -->
+    <section class="product-category">
+      <h2 class="category-title">Crochet Flower Lipstick Holder</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Card produk 1 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-1"
+          data-name="Baby Blue"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/baby blue.jpeg"
+            class="product-image"
+            alt="Flower Lipstick Baby Blue"
+          />
+          <div class="product-name">Baby Blue</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 2 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-2"
+          data-name="Baby Pink"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/Baby Pink.jpeg"
+            class="product-image"
+            alt="Baby Pink"
+          />
+          <div class="product-name">Baby Pink</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 3 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-3"
+          data-name="Blue"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/blue.jpeg"
+            class="product-image"
+            alt="Blue"
+          />
+          <div class="product-name">Blue</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 4 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-4"
+          data-name="Broken White"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/broken white.jpeg"
+            class="product-image"
+            alt="Broken White"
+          />
+          <div class="product-name">Broken White</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 5 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-5"
+          data-name="Cokelat"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/cokelat.jpeg"
+            class="product-image"
+            alt="Coklat"
+          />
+          <div class="product-name">Coklat</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 6 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-6"
+          data-name="Coksu"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/coksu.jpeg"
+            class="product-image"
+            alt="Coksu"
+          />
+          <div class="product-name">Coksu</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 7 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-7"
+          data-name="Dark Grey"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/Dark Grey.jpeg"
+            class="product-image"
+            alt="Dark Grey"
+          />
+          <div class="product-name">Dark Grey</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 8 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-8"
+          data-name="Dusty Pink"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/dusty pink.jpeg"
+            class="product-image"
+            alt="Dusty Pink"
+          />
+          <div class="product-name">Dusty Pink</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 9 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-9"
+          data-name="Green"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/green.jpeg"
+            class="product-image"
+            alt="Green"
+          />
+          <div class="product-name">Green</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 10 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-10"
+          data-name="Grey"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/Grey.jpeg"
+            class="product-image"
+            alt="Grey"
+          />
+          <div class="product-name">Grey</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 11 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-11"
+          data-name="Mustard"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/mustard.jpeg"
+            class="product-image"
+            alt="Mustard"
+          />
+          <div class="product-name">Mustard</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 12 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-12"
+          data-name="Purple"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/purple.jpeg"
+            class="product-image"
+            alt="Purple"
+          />
+          <div class="product-name">Purple</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 13 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-13"
+          data-name="Red"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/red.jpeg"
+            class="product-image"
+            alt="Red"
+          />
+          <div class="product-name">Red</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 14 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-14"
+          data-name="Sampul"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/sampul.jpeg"
+            class="product-image"
+            alt="Sampul"
+          />
+          <div class="product-name">Sampul</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 15 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-15"
+          data-name="Soft Orange"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/soft orange.jpeg"
+            class="product-image"
+            alt="Soft Orange"
+          />
+          <div class="product-name">Soft Orange</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 16 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-16"
+          data-name="Tosca Muda"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/Tosca Muda.jpeg"
+            class="product-image"
+            alt="Tosca Muda"
+          />
+          <div class="product-name">Tosca Muda</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 17 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-17"
+          data-name="Tosca Tua"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/Tosca Tua.jpeg"
+            class="product-image"
+            alt="Tosca Tua"
+          />
+          <div class="product-name">Tosca Tua</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori 3 End -->
+
+    <!-- Kategori 4 -->
+    <section class="product-category">
+      <h2 class="category-title">Crochet Flower Mirror Cover</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Card produk 1 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-1"
+          data-name="Baby Blue"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/baby blue.jpeg"
+            class="product-image"
+            alt="Baby Blue"
+          />
+          <div class="product-name">Baby Blue</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 2 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-2"
+          data-name="Baby Pink"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/baby pink.jpeg"
+            class="product-image"
+            alt="Baby Pink"
+          />
+          <div class="product-name">Baby Pink</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 3 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-3"
+          data-name="Dusty Pink"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/dusty pink.jpeg"
+            class="product-image"
+            alt="Dusty Pink"
+          />
+          <div class="product-name">Dusty Pink</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 4 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-4"
+          data-name="Green"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/green.jpeg"
+            class="product-image"
+            alt="Green"
+          />
+          <div class="product-name">Green</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 5 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-5"
+          data-name="Grey"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/grey.jpeg"
+            class="product-image"
+            alt="Grey"
+          />
+          <div class="product-name">Grey</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 6 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-6"
+          data-name="Mustard"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/mustard.jpeg"
+            class="product-image"
+            alt="Mustard"
+          />
+          <div class="product-name">Mustard</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 7 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-7"
+          data-name="Purple"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/purple.jpeg"
+            class="product-image"
+            alt="Purple"
+          />
+          <div class="product-name">Purple</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 8 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-lipstick-holder-8"
+          data-name="Red"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Lipstick Holder/red.jpeg"
+            class="product-image"
+            alt="Red"
+          />
+          <div class="product-name">Red</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 9 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-9"
+          data-name="Sampul"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/sampul.jpeg"
+            class="product-image"
+            alt="Sampul"
+          />
+          <div class="product-name">Sampul</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 10 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-10"
+          data-name="Soft Orange"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/soft orange.jpeg"
+            class="product-image"
+            alt="Soft Orange"
+          />
+          <div class="product-name">Soft Orang</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 11 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-11"
+          data-name="Tosca Muda"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/tosca muda.jpeg"
+            class="product-image"
+            alt="Tosca Muda"
+          />
+          <div class="product-name">Tosca Muda</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 12 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-12"
+          data-name="Tosca Tua"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/tosca tua.jpeg"
+            class="product-image"
+            alt="Tosca Tua"
+          />
+          <div class="product-name">Tosca Tua</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 13 -->
+        <div
+          class="product-card selectable"
+          data-id="flower-mirror-cover-13"
+          data-name="White"
+          data-price="10000"
+        >
+          <img
+            src="./img/product/bagcharm/Crochet Flower Mirror Cover/white.jpeg"
+            class="product-image"
+            alt="White"
+          />
+          <div class="product-name">White</div>
+          <div class="product-price">Rp 10000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori 4 End -->
+
+    <!-- Kategori 5 -->
+    <section class="product-category">
+      <h2 class="category-title">Amplop</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Card produk 1 -->
+        <div
+          class="product-card selectable"
+          data-id="amplop-1"
+          data-name="Amplop"
+          data-price="15000"
+        >
+          <img
+            src="./img/product/amplop/WhatsApp Image 2025-05-23 at 21.49.13.jpeg"
+            class="product-image"
+            alt="Amplop"
+          />
+          <div class="product-name">Amplop</div>
+          <div class="product-price">Rp 15000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 2 -->
+        <div
+          class="product-card selectable"
+          data-id="amplop-2"
+          data-name="Amplop"
+          data-price="15000"
+        >
+          <img
+            src="./img/product/amplop/WhatsApp Image 2025-05-23 at 21.49.13.jpeg"
+            class="product-image"
+            alt="Amplop"
+          />
+          <div class="product-name">Amplop</div>
+          <div class="product-price">Rp 15000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 3 -->
+        <div
+          class="product-card selectable"
+          data-id="amplop-3"
+          data-name="Amplop"
+          data-price="15000"
+        >
+          <img
+            src="./img/product/amplop/WhatsApp Image 2025-05-23 at 21.49.13.jpeg"
+            class="product-image"
+            alt="Amplop"
+          />
+          <div class="product-name">Amplop</div>
+          <div class="product-price">Rp 15000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 4 -->
+        <div
+          class="product-card selectable"
+          data-id="amplop-4"
+          data-name="Amplop"
+          data-price="15000"
+        >
+          <img
+            src="./img/product/amplop/WhatsApp Image 2025-05-23 at 21.49.13.jpeg"
+            class="product-image"
+            alt="Amplop"
+          />
+          <div class="product-name">Amplop</div>
+          <div class="product-price">Rp 15000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori 5 End -->
+
+    <!-- Kategori 6 -->
+    <section class="product-category">
+      <h2 class="category-title">Crochet Rose Bouquet</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Card produk 1 -->
+        <div
+          class="product-card selectable"
+          data-id="crocho-rose-bouquet-1"
+          data-name="Crocho Rose Bouquet"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/crochet bouquet/Crochet Rose Bouquet/WhatsApp Image 2025-05-23 at 21.58.07.jpeg"
+            class="product-image"
+            alt="Crocho Rose Bouquet"
+          />
+          <div class="product-name">Crocho Rose Bouquet</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 2 -->
+        <div
+          class="product-card selectable"
+          data-id="crocho-rose-bouquet-2"
+          data-name="Crocho Rose Bouquet"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/crochet bouquet/Crochet Rose Bouquet/WhatsApp Image 2025-05-23 at 21.58.08.jpeg"
+            class="product-image"
+            alt="Crocho Rose Bouquet"
+          />
+          <div class="product-name">Crocho Rose Bouquet</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 3 -->
+        <div
+          class="product-card selectable"
+          data-id="crocho-rose-bouquet-4"
+          data-name="Crocho Rose Bouquet"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/crochet bouquet/Crochet Rose Bouquet/WhatsApp Image 2025-05-23 at 21.58.08.jpeg"
+            class="product-image"
+            alt="Crocho Rose Bouquet"
+          />
+          <div class="product-name">Crocho Rose Bouquet</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <!-- Card produk 4 -->
+        <div
+          class="product-card selectable"
+          data-id="crocho-rose-bouquet-4"
+          data-name="Crocho Rose Bouquet"
+          data-price="12000"
+        >
+          <img
+            src="./img/product/crochet bouquet/Crochet Rose Bouquet/WhatsApp Image 2025-05-23 at 21.58.08.jpeg"
+            class="product-image"
+            alt="Crocho Rose Bouquet"
+          />
+          <div class="product-name">Crocho Rose Bouquet</div>
+          <div class="product-price">Rp 12000</div>
+          <div class="quantity-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">0</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori 6 End -->
+
+    <!-- Pop Up Form Pembelian -->
+    <div id="checkoutBar" class="checkout-bar" style="display: none">
+      <div class="checkout-details">
+        <span id="itemCount">0 item(s)</span>
+        <span id="itemNames">Nama Produk</span>
+        <span id="totalPrice">Rp 0</span>
+      </div>
+      <div class="checkout-actions">
+        <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+
+    <div id="checkoutModal" class="checkout-modal hidden">
+      <div class="modal-content">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <h3>Form Pembelian</h3>
+        <form id="orderForm">
+          <!-- Barang -->
+          <label>Barang yang Dibeli</label>
+          <div class="order-items" id="orderItems">
+            <input type="hidden" id="orderItemsInput" name="orderItems" />
+          </div>
+
+          <label for="fullName"><strong>Nama Lengkap</strong></label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Nama lengkap"
+            required
+          />
+
+          <!-- Jumlah (Quantity) -->
+          <label>Jumlah</label>
+          <div class="quantity-field">
+            <i class="fas fa-shopping-cart"></i>
+            <input type="number" id="quantity" min="1" value="1" required />
+          </div>
+
+          <div class="flex-row">
+            <div class="form-group">
+              <!-- Pemilihan Metode Pembayaran -->
+              <label for="paymentMethod">Metode Pembayaran</label>
+              <select id="paymentMethod" required>
+                <option value="">Pilih</option>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="COD">Bayar di Tempat (COD)</option>
+                <option value="QRIS">QRIS</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <!-- Pemilihan Metode Pengiriman Ekspedisi -->
+              <label for="shippingMethod">Ekspedisi Pengiriman</label>
+              <select id="shippingMethod" required>
+                <option value="">-- Pilih Ekspedisi --</option>
+                <option value="JNE">JNE</option>
+                <option value="J&T">J&T</option>
+                <option value="SiCepat">SiCepat</option>
+                <option value="AnterAja">AnterAja</option>
+                <option value="COD">COD</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Alamat -->
+          <label>Alamat Pengiriman</label>
+          <textarea id="address" rows="3" required></textarea>
+
+          <!-- Total & Ongkir -->
+          <!-- Total & Ongkir -->
+          <div class="total-summary">
+            <span>Total Belanja:</span>
+            <strong id="totalBelanja">Rp 0</strong><br />
+            <span>Ongkir:</span>
+            <strong id="ongkir">Rp 0</strong><br />
+            <hr />
+            <span>Total Pembayaran:</span>
+            <strong id="totalPembayaran">Rp 0</strong>
+          </div>
+
+          <!-- Tombol Kirim -->
+          <button type="submit" id="sendOrder">Kirim Pesanan</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Pop Up Form Pembelian -->
+
+    <!-- Sticy Cart Floating Button (Opsional) -->
+
+    <!-- Sticy Cart Floating Button (Opsional)  End-->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="./img/logo rainygurl.jpg" alt="Rainy Gurl Logo" />
+          <h3>Rainy Gurl</h3>
+        </div>
+
+        <div class="footer-links-wrapper">
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#katalog">Katalog</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Sosmed</a></li>
+            <li><a href="#membership">Membership</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="message-circle"></i></a>
+            <a href="./index.html"><i data-feather="home"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Rainy Gurl. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="penjualan.js"></script>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
