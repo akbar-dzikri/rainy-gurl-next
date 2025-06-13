@@ -1,10 +1,9 @@
-// components/layout/Navbar.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingCart, User, Menu, Home as HomeIcon } from "lucide-react";
+import { ShoppingCart, Menu, Home as HomeIcon } from "lucide-react";
 import BrandLogo from "./BrandLogo";
 import NavLinkItem from "./NavLinkItem";
 import { NavLinks, NavLinkKey, PageRoutes } from "@/lib/constants";
@@ -18,6 +17,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import AuthDialog from "./AuthDialog";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -76,25 +76,7 @@ const Navbar: React.FC = () => {
           )}
         </Link>
       </Button>
-      {!mobile && (
-        <Button
-          variant="ghost"
-          size="icon"
-          asChild
-          className={cn(
-            "h-10 w-10 scale-100 hover:bg-transparent hover:text-white transition-all hover:scale-125 duration-300 ease-in-out",
-            commonIconClass
-          )}
-        >
-          <Link
-            href={PageRoutes.formMember}
-            aria-label="Membership"
-            onClick={onLinkClick}
-          >
-            <User className="h-5 w-5" />
-          </Link>
-        </Button>
-      )}
+      {!mobile && <AuthDialog />}
     </>
   );
 
